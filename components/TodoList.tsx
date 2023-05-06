@@ -22,7 +22,7 @@ const TodoList = (props: Props) => {
     <div>
       <ul className='mx-auto'>
         {todos.map((todo) => (
-        <div key={todo.id} className='flex bg-orange-200 rounded-md mt-2 mb-2 p-2 justify-between'>
+        <div key={todo.id} className='flex rounded-md mt-2 mb-2 p-2 justify-between bg-gray-300'>
           <li className=' font-medium'>✅ {todo.text}</li>
           <span className=' cursor-pointer' onClick={() => handleDelete(todo.id)}>✖️</span>
         </div>

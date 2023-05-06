@@ -30,7 +30,7 @@ const TodoApp = () => {
       <h3>Supabase Todo App</h3>
       <form onSubmit={(e) => handleSubmit(e)}>
         <input type="text"  className="shadow-lg p-1 outline-none mr-2" onChange={(e) => setText(e.target.value)} value={text}/>
-        <button className="shadow-md border-2 px-1 py-1 rounded-lg bg-green-200">Add</button>
+        <button className="shadow-md border-2 px-1 py-1 rounded-lg bg-blue-200">Add</button>
       </form>
       <TodoList todos={todos} setTodos={setTodos}/>
     </section>
